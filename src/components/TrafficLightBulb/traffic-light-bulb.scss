@@ -1,0 +1,30 @@
+@use "sass:color";
+@use "sass:math";
+@use "../../abstracts" as *;
+@use "../../theme" as *;
+
+@mixin bulb-effects($bg) {
+  @include radial-gradient($bg);
+
+  filter: drop-shadow(0 0 0.5em $bg);
+}
+
+.traffic-light-bulb {
+  @include circle(5em);
+  @include radial-gradient($white);
+
+  filter: drop-shadow(0 0 0.5em transparent);
+  transition: all 0.25s ease;
+
+  &.red.active {
+    @include bulb-effects($red);
+  }
+
+  &.yellow.active {
+    @include bulb-effects($yellow);
+  }
+
+  &.green.active {
+    @include bulb-effects($green);
+  }
+}

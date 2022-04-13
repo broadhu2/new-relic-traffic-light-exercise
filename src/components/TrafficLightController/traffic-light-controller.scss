@@ -1,0 +1,19 @@
+.traffic-light-controller {
+  display: flex;
+  flex-flow: column wrap;
+  gap: 2em;
+  align-items: center;
+}
+
+.light-switcher {
+  display: flex;
+  flex-flow: column wrap;
+  gap: 2em;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.change-button {
+  width: 100%;
+  height: 3em;
+}

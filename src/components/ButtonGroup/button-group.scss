@@ -1,0 +1,16 @@
+@use "../../theme" as *;
+
+.button-group {
+  fieldset {
+    display: flex;
+    padding: 1em;
+    border: 3px solid $black;
+  }
+
+  legend {
+    padding: 0.25em 0.5em;
+    color: $white;
+    text-align: left;
+    background-color: $black;
+  }
+}

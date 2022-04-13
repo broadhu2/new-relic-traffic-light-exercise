@@ -1,0 +1,39 @@
+@use "../../theme" as *;
+
+.container {
+  overflow: hidden;
+  background: $white;
+  border-radius: 5px;
+  box-shadow: 4px 8px 16px 0 $shadow-color;
+
+  .header,
+  .footer {
+    color: $white;
+    background: $primary-blue;
+  }
+
+  .header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0.5em 1em;
+
+    svg {
+      width: 4em;
+      height: 4em;
+      margin-right: 1em;
+    }
+
+    .title {
+      font-size: 2em;
+      color: $white;
+      text-align: center;
+    }
+  }
+
+  .body {
+    display: grid;
+    place-items: center;
+    padding: 2em 1em;
+  }
+}

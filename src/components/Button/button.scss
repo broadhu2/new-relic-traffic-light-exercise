@@ -1,0 +1,6 @@
+@use "../../abstracts" as *;
+@use "../../theme" as *;
+
+button {
+  @include button($primary-blue);
+}

@@ -1,0 +1,31 @@
+@use "../../abstracts" as *;
+@use "../../theme" as *;
+
+.radio-wrapper {
+  margin: 0.5em;
+}
+
+input[type="radio"] {
+  position: absolute;
+  cursor: pointer;
+  opacity: 0;
+}
+
+label {
+  @include button($white);
+
+  padding: 0.75em;
+  transition: background-color 0.25s ease-in-out;
+
+  &.selected {
+    @include button($primary-blue);
+
+    padding: 0.75em;
+  }
+}
+
+// keyboard navigation styles
+input[type="radio"]:focus-visible + label {
+  outline: 5px auto Highlight;
+  outline: 5px auto -webkit-focus-ring-color;
+}

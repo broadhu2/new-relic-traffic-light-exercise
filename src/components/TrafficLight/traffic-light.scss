@@ -1,0 +1,16 @@
+@use "../../theme" as *;
+
+.traffic-light {
+  padding: 0.2em;
+  background: $black;
+  border-radius: 0.5em;
+
+  &.clickable {
+    cursor: pointer;
+
+    &:hover,
+    &:focus {
+      filter: brightness(90%);
+    }
+  }
+}
